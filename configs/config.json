@@ -1,0 +1,8 @@
+{
+  "app": {
+    "port": 3000
+  },
+  "mongo": {
+    "uri": "mongodb+srv://jnanatejaswigudapati:odFVOcww96q3aGqk@clustermystar.78e0txa.mongodb.net/actorsData"
+  }
+}
