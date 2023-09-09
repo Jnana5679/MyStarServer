@@ -9,6 +9,8 @@ const expressRoutes = require("./expressRoutes/routes");
 const axios = require("axios");
 
 const actorsBios = require("./mongoSchemas/actorBiosSchema");
+const config = require("./configs/config");
+const port = config.app.port;
 
 const app = express();
 app.use(express.json(), cors());
@@ -23,6 +25,6 @@ const sslServer = https.createServer(
   app
 );
 
-app.listen(process.env.SERVER, () => {
-  console.log(`Server is running on port 3005`);
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
